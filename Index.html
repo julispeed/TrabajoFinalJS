@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even-tos</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="/Imagenes/Logopagina.png">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img class="logo" src="/Imagenes/LogoEmpresa.png">
+            <h1 class="titulo">Organiza Even-tos para que nadie se olvide de que organizaste un evento</h1>
+        </nav>
+    </header>
+    <main class="contenido">        
+        <div class="filtro">
+            <h2>Busca tus eventos</h2>
+            <div class="botones">
+                <button>Listar Eventos</button>
+                <button>Buscar Eventos</button>
+                <button>Filtrar Eventos</button>
+                <button>Ordernar por fecha los Eventos</button>    
+            </div>
+            <div id="rta">
+
+            </div>
+        </div>
+
+        <div class="informacion">
+            <div class="formulario">
+                <h2>REGISTRAR EVENTO</h2>
+                <form id="datoseventos">
+                    <div class="form">
+                        <label for="evento-nombre">Nombre del evento</label>
+                        <input type="text" id="evento-nombre" name="evento-nombre" required>
+                    </div>
+                    <div class="form">
+                        <label>Tipo de Evento</label>
+                        <div class="radios">
+                            <input type="radio" name="evento-tipo" id="concierto" value="Concierto">
+                            <label>Concierto</label>
+                            <input type="radio" name="evento-tipo" id="Exposición" value="Exposición">
+                            <label>Exposición</label>
+                            <input type="radio" name="evento-tipo" id="feria" value="Feria">
+                            <label>Feria</label>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <label>Fecha de Evento</label>
+                        <input type="date" id="evento-fecha" name="fecha-evento" required>
+                    </div>
+                    <div class="form">
+                        <label for="evento-direccion">Direccion</label>         
+                        <input type="text" name="evento-direccion" id="evento-direccion" required> 
+                    </div>
+                    <div class="form">
+                        <label>Ciudad</label>
+                        <select id="evento-ciudad" name="evento-ciudad" required>
+                            <option value="Bahia Blanca">Bahia Blanca</option>
+                            <option value="General San Martin">General San Martin</option>
+                            <option value="Jacinto Arauz">Jacinto Arauz</option>
+                            <option value="Bernasconi">Bernasconi</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="informacion">
+                <label for="evento-ciudad">Capacidad</label>
+                <input type="number" name="evento-ciudad" id="evento-ciudad" required>
+            </div>
+            
+        </div>
+    </main>
+    <script src="Jscript.js"></script>
+</body>
+
+</html>
